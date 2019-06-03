@@ -4,11 +4,9 @@
     "path": "/foo",
     "method": "POST",
     "headers": {
-      "Content-Type": "application/json"
+      "Content-Type": "multipart/form-data;boundary=BOUNDARY"
     },
-    "body": {
-      "query": "TEST"
-    }
+    "body": "Hello BOUNDARY world"
   },
   "response": {
     "status": 200,
@@ -16,7 +14,7 @@
       "Content-Type": "application/json"
     },
     "body": {
-      "message": "Hello world"
+      "message": "Hello world2"
     }
   }
 }
